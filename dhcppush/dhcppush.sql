@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `ranges` (
   `first` varchar(15) NOT NULL DEFAULT '',
   `last` varchar(15) NOT NULL DEFAULT '',
   PRIMARY KEY (`rec_num`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='IP range designation for leases' AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='IP range designation for leases' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `reservations` (
   `gateway` varchar(15) DEFAULT NULL,
   `netmask` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`res_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='dhcp lease reservations' AUTO_INCREMENT=88 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='dhcp lease reservations' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `subnets` (
   `dns2` varchar(15) DEFAULT NULL,
   `lease_time` int(6) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='Subnet declarations for dhcp reservations' AUTO_INCREMENT=18 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COMMENT='Subnet declarations for dhcp reservations' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
